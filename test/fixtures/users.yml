@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name_first: MyString
-  name_middle: MyString
-  name_last: MyString
-  nickname: MyString
-  email: MyString
+larry:
+  name_first: laughing
+  name_middle:
+  name_last: larry
+  nickname: mascot
+  email: larry@wholeworldtheatre.com
 
-two:
-  name_first: MyString
-  name_middle: MyString
-  name_last: MyString
-  nickname: MyString
-  email: MyString
+donovan:
+  name_first: Donovan
+  name_middle: Charles
+  name_last: Young
+  nickname:
+  email: dyoung522@gmail.com

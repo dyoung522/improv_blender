@@ -12,10 +12,20 @@ class User < ActiveRecord::Base
   end
 
   def middle_initial
-    "#{name_middle[0].upcase}." if name_middle
+    initial_for name_middle
   end
 
   def full_name
     "#{name_first} #{middle_initial} #{name_last}".split.map(&:capitalize).join(' ')
+  end
+
+  def familiar_name
+    nickname.nil? ? first_name : nickname.capitalize
+  end
+
+  protected
+
+  def initial_for(name)
+    "#{name[0].upcase}." unless name.nil?
   end
 end
